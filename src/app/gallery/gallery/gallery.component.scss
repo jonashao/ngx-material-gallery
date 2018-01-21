@@ -1,0 +1,55 @@
+$icon-small-container-size: 3rem;
+$icon-small-size: 3rem;
+
+.mat-dialog-container {
+  padding: 0;
+}
+
+.gallery-container {
+  width: 80vw;
+  height: 80vh;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+
+  .mat-button, .mat-icon {
+    font-size: 3rem;
+    color: white;
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+
+.mat-icon-button {
+  width: $icon-small-container-size;
+  height: $icon-small-container-size;
+  line-height: $icon-small-container-size;
+
+  .mat-icon, .mat-icon-button i {
+    line-height: $icon-small-size;
+  }
+
+  .mat-icon {
+    width: $icon-small-size;
+    height: $icon-small-size;
+  }
+
+  .material-icons {
+    font-size: $icon-small-size;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+

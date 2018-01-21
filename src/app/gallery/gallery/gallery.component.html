@@ -1,0 +1,22 @@
+<div class="gallery-container"
+     [style.background-image]="'url('+images[i]+')'">
+
+  <div class="actions">
+    <button mat-icon-button (click)="i = (i + images.length - 1) % images.length">
+      <mat-icon aria-label="Example icon-button with a heart icon">chevron_left</mat-icon>
+    </button>
+
+    <button mat-icon-button (click)="i = (i + 1) % images.length;">
+      <mat-icon aria-label="Example icon-button with a heart icon">chevron_right</mat-icon>
+    </button>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
