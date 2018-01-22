@@ -23,11 +23,6 @@ export class GalleryComponent implements OnInit {
   ngOnInit() {
   }
 
-  prev() {
-    this.i = (this.i + this.images.length - 1) % this.images.length;
-    console.log(this.i);
-  }
-
   onNoClick(): void {
     this.dialogRef.close();
   }

@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {MatDialog} from '@angular/material';
 import {GalleryComponent} from './gallery/gallery/gallery.component';
+import {GalleryService} from './gallery/gallery/gallery.service';
 
 @Component({
   selector: 'app-root',
@@ -21,10 +22,10 @@ export class AppComponent {
   template: '<button mat-button (click)="openGallery()">OPEN</button>\n'
 })
 export class TestDialogComponent {
-  constructor(private dialog: MatDialog) {
+  constructor(private gallery: GalleryService) {
   }
 
   openGallery() {
-    this.dialog.open(GalleryComponent, {data: {position: 1}});
+    this.gallery.openGallery();
   }
 }

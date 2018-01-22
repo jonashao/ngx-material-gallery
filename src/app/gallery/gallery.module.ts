@@ -3,6 +3,7 @@ import {CommonModule} from '@angular/common';
 import {GalleryComponent} from './gallery/gallery.component';
 import {MatButtonModule, MatIconModule} from '@angular/material';
 import {TestDialogComponent} from '../app.component';
+import {GalleryService} from './gallery/gallery.service';
 
 @NgModule({
   imports: [
@@ -10,7 +11,8 @@ import {TestDialogComponent} from '../app.component';
   ],
   entryComponents: [GalleryComponent, TestDialogComponent],
   declarations: [GalleryComponent, TestDialogComponent],
-  exports: [GalleryComponent]
+  exports: [GalleryComponent],
+  providers: [GalleryService]
 })
 export class GalleryModule {
 

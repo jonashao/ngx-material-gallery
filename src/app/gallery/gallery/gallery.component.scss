@@ -1,8 +1,10 @@
 $icon-small-container-size: 3rem;
 $icon-small-size: 3rem;
 
-.mat-dialog-container {
-  padding: 0;
+.gallery-dialog {
+  .mat-dialog-container {
+    padding: 0;
+  }
 }
 
 .gallery-container {
@@ -27,7 +29,6 @@ $icon-small-size: 3rem;
     height: 3rem;
   }
 }
-
 
 .mat-icon-button {
   width: $icon-small-container-size;

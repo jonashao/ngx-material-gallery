@@ -16,7 +16,6 @@ import {GalleryComponent} from './gallery/gallery/gallery.component';
     MatButtonModule, MatDialogModule, GalleryModule
   ],
   providers: [],
-  entryComponents: [GalleryComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {
